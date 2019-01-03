@@ -43,7 +43,7 @@ with open('data.csv') as csvfile:
     ax.axis("off")
 
     #Plot the reslut to a bar chart
-    plt.subplot2grid((5,12), (0,4),colspan=9,rowspan=3)
+    plt.subplot2grid((5,12), (0,4),colspan=7,rowspan=3)
     left = np.arange(len(dic))
     height = int_list
     color_list=['rosybrown','gold','skyblue','plum','coral','slateblue',
@@ -53,7 +53,7 @@ with open('data.csv') as csvfile:
     plt.xlabel('purpose')
     plt.ylabel('mean(int_rate)')
     plt.xticks(left,pur_list,fontsize=7)
-    plt.yticks(np.arange(0, 20, 2.5),fontsize=6)
+    plt.yticks(np.arange(0, 20, 2.5),fontsize=7)
     plt.title('loan rate')
 
 
